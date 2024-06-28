@@ -12,15 +12,7 @@
 <body class="bg-light">
     <div class="container mt-5">
         <h1 class="text-center mb-4">Intersection Signal Timer</h1>
-        <div class="intersection mb-4">
-            <div class="road road-vertical"></div>
-            <div class="road road-horizontal"></div>
-            <% signals.forEach((signal, index) => { %>
-                <div id="signal-<%= index + 1 %>" class="signal signal-<%= index + 1 %> inactive">
-                    <%= signal.name %>
-                </div>
-            <% }); %>
-        </div>
+        
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
